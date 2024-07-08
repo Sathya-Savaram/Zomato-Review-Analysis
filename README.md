@@ -2,9 +2,9 @@ Zomato Review Sentiment Analysis :
       This project leverages machine learning to perform sentiment analysis on the Zomato review dataset. By analyzing user reviews, we aim to understand user preferences and extract valuable insights.
 
 Project Overview
-Sentiment Analysis: Utilizes machine learning techniques to classify user reviews into positive, negative, or neutral sentiments.
-User Preferences: Gains insights into user preferences based on the sentiment of their reviews.
-Data Source: Zomato review dataset from Kaggle.
+1. Sentiment Analysis: Utilizes machine learning techniques to classify user reviews into positive, negative, or neutral sentiments.
+2. User Preferences: Gains insights into user preferences based on the sentiment of their reviews.
+3. Data Source: Restaurants dataset from Kaggle.
 
 Technologies Used :
 1. Python: Programming language for data processing and machine learning.
