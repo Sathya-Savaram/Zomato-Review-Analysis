@@ -1,14 +1,153 @@
-## Zomato Review Sentiment Analysis 
+# 🍽️ Zomato Review Sentiment Analysis – NLP Project
 
-This project leverages machine learning to perform sentiment analysis on the Zomato review dataset. By analyzing user reviews, we aim to understand user preferences and extract valuable insights.
+---
 
-## Project Overview
-1. Sentiment Analysis: Utilizes machine learning techniques to classify user reviews into positive, negative, or neutral sentiments.
-2. User Preferences: Gains insights into user preferences based on the sentiment of their reviews.
-3. Data Source: Restaurants dataset from Kaggle.
+## 📌 Project Overview
 
-## Technologies Used
-1. Python: Programming language for data processing and machine learning.
-2. Pandas: Library for data manipulation and analysis.
-3. Scikit-learn: Machine learning library for building and evaluating models.
-4. NLTK: Natural Language Toolkit for text processing and sentiment analysis.
+This project performs **Sentiment Analysis** on restaurant reviews from Zomato using **Python and Natural Language Processing (NLP)** techniques.
+
+The objective is to analyze customer feedback and classify reviews as **Positive** or **Negative**, enabling businesses to understand customer satisfaction patterns.
+
+---
+
+## 🎯 Business Objective
+
+- Understand customer sentiment from textual reviews  
+- Identify positive and negative feedback patterns  
+- Apply NLP techniques for text cleaning and feature engineering  
+- Build and evaluate a Machine Learning classification model  
+
+---
+
+## 🛠 Tools & Technologies
+
+- **Python**
+- **Pandas**
+- **NumPy**
+- **NLTK**
+- **Scikit-learn**
+- **Jupyter Notebook**
+
+---
+
+## 📂 Dataset Information
+
+**File:** `Restaurant_Reviews.tsv`
+
+The dataset contains:
+
+- Review text
+- Sentiment label (0 = Negative, 1 = Positive)
+
+---
+
+## 🔎 Data Preprocessing & NLP Steps
+
+The following preprocessing techniques were applied:
+
+- Text lowercasing  
+- Removing punctuation & special characters  
+- Stopword removal  
+- Stemming using PorterStemmer  
+- Tokenization  
+- Feature extraction using **Bag of Words (CountVectorizer)**  
+
+---
+
+## 🤖 Machine Learning Model
+
+### Algorithm Used:
+- **Naive Bayes Classifier**
+
+### Workflow:
+1. Train-Test Split
+2. Model Training
+3. Prediction on test data
+4. Model Evaluation
+
+### Evaluation Metrics:
+- Accuracy Score
+- Confusion Matrix
+
+The model successfully classified customer sentiments with strong predictive performance.
+
+---
+
+## 📊 Key Insights
+
+- Majority of customer reviews are positive.
+- Proper text preprocessing significantly improves model performance.
+- Naive Bayes performs effectively for binary text classification problems.
+- NLP enables extraction of structured insights from unstructured text data.
+
+---
+
+## 📁 Project Structure
+
+```
+Zomato-Review-Analysis/
+│
+├── Restaurant_Reviews.tsv
+├── Zomato_Reviews_Analysis.ipynb
+└── README.md
+```
+
+---
+
+## 🚀 How to Run the Project
+
+### Step 1: Clone the Repository
+
+```
+git clone https://github.com/Sathya-Savaram/Zomato-Review-Analysis.git
+```
+
+### Step 2: Navigate to Project Folder
+
+```
+cd Zomato-Review-Analysis
+```
+
+### Step 3: Install Required Libraries
+
+```
+pip install pandas numpy nltk scikit-learn
+```
+
+### Step 4: Download NLTK Stopwords (First Time Only)
+
+Open Python and run:
+
+```python
+import nltk
+nltk.download('stopwords')
+```
+
+### Step 5: Open Jupyter Notebook
+
+```
+jupyter notebook
+```
+
+Then open:
+
+```
+Zomato_Reviews_Analysis.ipynb
+```
+
+Run all cells to execute the full workflow.
+
+---
+
+## 📌 Conclusion
+
+This project demonstrates:
+
+- End-to-end NLP workflow  
+- Text preprocessing and feature engineering  
+- Supervised Machine Learning classification  
+- Model evaluation using standard metrics  
+
+It showcases practical application of Natural Language Processing for business sentiment analysis.
+
+---
